@@ -1,7 +1,6 @@
 {
   "name": "lw4",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,6 +16,9 @@
   },
   "homepage": "https://github.com/AlexeevPavel/lw4#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
-  }
+    "gulp": "^3.9.1",
+    "gulp-uglify": "^3.0.0"
+  },
+  "dependencies": {},
+  "description": ""
 }
