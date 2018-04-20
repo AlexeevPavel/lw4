@@ -5,11 +5,11 @@ var gulp = require('gulp'),
 gulp.task('minifyjs', function () {
     gulp.src('js/registration.js')
         .pipe(uglify())
-        .pipe(gulp.dest('build'));
+        .pipe(gulp.dest('build/js'));
 });
 
 gulp.task('minifycss', function () {
-    gulp.src('css/style.js')
-        .pipe(uglify())
-        .pipe(gulp.dest('build'));
+    gulp.src('css/style.css')
+        .pipe(uglifycss())
+        .pipe(gulp.dest('build/css'));
 });
