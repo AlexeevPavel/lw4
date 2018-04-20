@@ -16,6 +16,7 @@
   },
   "homepage": "https://github.com/AlexeevPavel/lw4#readme",
   "devDependencies": {
+    "browser-sync": "^2.23.7",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-contrib-copy": "^0.1.3",

@@ -3,6 +3,13 @@ var gulp = require('gulp'),
   uglifycss = require('gulp-cssmin');
   copy = require('gulp-contrib-copy'); 
   rename = require('gulp=rename');
+  browserSync = require('browser-sync');
+  reload = browserSync.reload;
+  path = {
+      html:['index.html'],
+      css:['css/style.css'],
+      script:['js/registration.js']
+  };
 
 gulp.task('minifyjs', function () {
   gulp.src('js/registration.js')
