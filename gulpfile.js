@@ -2,7 +2,7 @@ var gulp = require('gulp'),
   uglify = require('gulp-uglify');
   uglifycss = require('gulp-cssmin');
   copy = require('gulp-contrib-copy'); 
-  rename = require('gulp=rename');
+  rename = require('gulp-rename');
   browserSync = require('browser-sync');
   reload = browserSync.reload;
   path = {
@@ -54,8 +54,11 @@ gulp.task('minifyall', function () {
     .pipe(gulp.dest('build/css'))
   gulp.src('index.html')
     .pipe(copy())
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest('build'))
   gulp.src('img/background.jpg')
     .pipe(copy())
-    .pipe(gulp.dest('build/img'));
+    .pipe(gulp.dest('build/img'))
+    gulp.src('js/jquery.min.js')
+    .pipe(copy())
+    .pipe(gulp.dest('build/js'))
 }); 
